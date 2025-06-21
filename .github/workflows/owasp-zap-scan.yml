@@ -10,7 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main  # ✅ Make sure this matches your default branch name
+
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.12.0
         with:
