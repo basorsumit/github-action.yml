@@ -1,0 +1,10 @@
+name: Run shell commands
+
+on: [push]
+
+jobs:
+  run-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "first workflow file"
